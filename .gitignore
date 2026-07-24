@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.env/
+
+# Logs
+logs/
+*.log
+
+# Temporary encrypted files
+files/*.encrypted
+files/*.decrypted
+
+# Encryption keys
+keys/*.key
+keys/*.pem
+
+# IDE settings
+.vscode/

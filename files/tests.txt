@@ -1,0 +1,7 @@
+Name: Bhoomika B C
+Branch: CSE (Cyber Security)
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+0123456789
+!@#$%^&*()_+-=[]{}|;':",./<>?
+The quick brown fox jumps over the lazy dog.
