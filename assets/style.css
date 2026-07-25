@@ -221,9 +221,16 @@ SOCIAL LINKS
 }
 
 header {
-    visibility: hidden;
+    visibility: visible;
 }
 
 footer {
     visibility: hidden;
+}
+/* Keep Streamlit sidebar expand/collapse button visible */
+
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
