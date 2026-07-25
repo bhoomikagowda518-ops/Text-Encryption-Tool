@@ -264,3 +264,17 @@ header {
 [data-testid="collapsedControl"] svg {
     fill: white !important;
 }
+/* Make Streamlit header controls readable */
+
+[data-testid="stHeader"] {
+    background: #0F172A !important;
+}
+
+[data-testid="stHeader"] * {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+[data-testid="stHeader"] svg {
+    fill: white !important;
+}
