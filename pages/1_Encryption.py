@@ -193,12 +193,15 @@ st.divider()
 # Input
 # ==================================================
 
-st.subheader("📝 Plain Text")
+st.subheader("📝 Input Text")
 
 plaintext = st.text_area(
     "",
     height=180,
-    placeholder="Enter your message here..."
+    placeholder="Enter plain text to encrypt or encrypted text to decrypt..."
+)
+st.info(
+    "💡 Enter plain text to encrypt, or paste encrypted text here to decrypt. For Caesar and Vigenère, use the same key that was used during encryption."
 )
 
 # Dynamic Input
