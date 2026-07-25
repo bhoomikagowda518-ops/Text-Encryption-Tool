@@ -177,12 +177,15 @@ st.divider()
 
 # INPUT
 
-st.subheader("📝 Input")
+st.subheader("📝 Input Text")
 
-message = st.text_area(
+plaintext = st.text_area(
     "",
     height=180,
-    placeholder="Enter text or password..."
+    placeholder="Enter text to hash or enter a hash for verification..."
+)
+st.info(
+    "💡 Enter text to generate a hash. For hash verification, enter the original text and the corresponding hash when prompted."
 )
 stored_hash = ""
 
