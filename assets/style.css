@@ -214,27 +214,53 @@ SOCIAL LINKS
     color:#CBD5E1;
     font-size:14px;
 }
-/* Hide Streamlit default toolbar */
+/* ================================
+STREAMLIT HEADER / TOOLBAR
+================================ */
 
 #MainMenu {
     visibility: hidden;
 }
 
-header {
-    visibility: visible;
-    background: transparent;
-}
-[data-testid="stHeader"] {
-    background: transparent !important;
-}
-
 footer {
     visibility: hidden;
 }
-/* Keep Streamlit sidebar expand/collapse button visible */
 
-[data-testid="collapsedControl"] {
-    display: flex !important;
+
+/* Keep header visible */
+header {
+    visibility: visible !important;
+    background: #0F172A !important;
+}
+
+
+/* Toolbar visibility */
+[data-testid="stToolbar"] {
     visibility: visible !important;
     opacity: 1 !important;
+}
+
+
+/* Toolbar buttons/icons */
+[data-testid="stToolbar"] button {
+    color: white !important;
+    opacity: 1 !important;
+}
+
+
+/* SVG icons inside toolbar */
+[data-testid="stToolbar"] svg {
+    fill: white !important;
+    color: white !important;
+}
+
+
+/* Sidebar expand/collapse button */
+[data-testid="collapsedControl"] {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+[data-testid="collapsedControl"] svg {
+    fill: white !important;
 }
