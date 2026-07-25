@@ -10,4 +10,4 @@ def generate_aes_key():
             file.write(key)
          return key
     with open(KEY_PATH, "rb") as file:
-      return file.read()
+        return file.read()
