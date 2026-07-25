@@ -222,6 +222,10 @@ SOCIAL LINKS
 
 header {
     visibility: visible;
+    background: transparent;
+}
+[data-testid="stHeader"] {
+    background: transparent !important;
 }
 
 footer {
