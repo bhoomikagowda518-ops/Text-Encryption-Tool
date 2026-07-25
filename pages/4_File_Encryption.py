@@ -238,12 +238,17 @@ st.divider()
 # ==================================================
 # Process Button
 # ==================================================
+if algorithm == "File Encrypt":
+    button_text = "🔒 Encrypt File"
+elif algorithm == "File Decrypt":
+    button_text = "🔓 Decrypt File"
+else:
+    button_text = "⚙ Process File"
 
 process = st.button(
-    "⚙ Process File",
+    button_text,
     use_container_width=True
 )
-
 st.divider()
 
 # ==================================================
