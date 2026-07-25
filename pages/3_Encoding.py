@@ -209,7 +209,10 @@ st.subheader("📝 Input Text")
 plaintext = st.text_area(
     "",
     height=180,
-    placeholder="Enter text here..."
+    placeholder="Enter plain text to encode or encoded text to decode..."
+)
+st.info(
+    "💡 Enter plain text to encode, or paste encoded text here to decode."
 )
 
 st.info(
