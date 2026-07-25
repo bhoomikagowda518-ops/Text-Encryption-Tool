@@ -37,16 +37,36 @@ st.divider()
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    st.markdown("**Algorithms**  \n3")
+    st.markdown("""
+    <div class="stats-card">
+        <div class="stats-title">Algorithms</div>
+        <div class="stats-value">3</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col2:
-    st.markdown("**Modern**  \nSHA")
+    st.markdown("""
+    <div class="stats-card">
+        <div class="stats-title">Modern</div>
+        <div class="stats-value">SHA</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col3:
-    st.markdown("**Password**  \nBCrypt")
+    st.markdown("""
+    <div class="stats-card">
+        <div class="stats-title">Password</div>
+        <div class="stats-value">Bcrypt</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 with col4:
-    st.markdown("**Status**  \nReady")
+    st.markdown("""
+    <div class="stats-card">
+        <div class="stats-title">Status</div>
+        <div class="stats-value">Ready</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 st.divider()
 
