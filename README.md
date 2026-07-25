@@ -14,6 +14,7 @@ Try the application here:
 ![Cryptography](https://img.shields.io/badge/Cryptography-AES%20%7C%20RSA%20%7C%20SHA256-green)
 ![Tests](https://img.shields.io/badge/Tests-Unittest-brightgreen)
 ![Status](https://img.shields.io/badge/Status-Educational%20Project-yellow)
+![Text Encryption Tool Dashboard](screenshots/home.png)
 
 ---
 
