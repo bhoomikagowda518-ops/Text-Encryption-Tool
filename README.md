@@ -1,4 +1,5 @@
 # 🔐 Text Encryption Tool
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bhoomikagowda518-ops/Text-Encryption-Tool)
 
 **A Python and Streamlit-based cybersecurity application implementing classical ciphers, modern symmetric/asymmetric encryption, secure hashing, encoding, and file protection through an interactive security dashboard — built to understand how real-world security systems handle confidentiality, integrity, and secure data processing.**
 
@@ -350,7 +351,7 @@ Building this project reinforced practical understanding of:
 
 🔗 **Connect with me**
 
-- 🐙 GitHub: https://github.com/bhoomikagowda518-ops
-- 💼 LinkedIn: https://www.linkedin.com/in/bhoomikabc2008
+- 🐙 GitHub: [bhoomikagowda518-ops](https://github.com/bhoomikagowda518-ops)
+- 💼 LinkedIn: [Bhoomika B C](https://www.linkedin.com/in/bhoomikabc2008)
 
 *This project is part of an ongoing effort to build practical, demonstrable cybersecurity skills through hands-on implementation rather than theory alone.*
