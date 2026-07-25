@@ -6,7 +6,7 @@
 
 Try the application here:
 
-[🔐 Text Encryption Tool](https://text-encryption-tool-rypytn7rwz5wga9vrnwpuh.streamlit.app/)
+[Click here for Live Demo](https://text-encryption-tool-rypytn7rwz5wga9vrnwpuh.streamlit.app/)
 
 **A Python and Streamlit-based cybersecurity application implementing classical ciphers, modern symmetric/asymmetric encryption, secure hashing, encoding, and file protection through an interactive security dashboard — built to understand how real-world security systems handle confidentiality, integrity, and secure data processing.**
 
