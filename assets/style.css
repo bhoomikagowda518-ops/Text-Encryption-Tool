@@ -1,0 +1,229 @@
+/* ==========================================
+   TEXT ENCRYPTION TOOL
+   Developed by Bhoomika B C
+========================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ---------- Global ---------- */
+
+html,
+body,
+[class*="css"] {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Main Background */
+
+.stApp{
+    background:#0F172A;
+}
+
+/* ---------- Sidebar ---------- */
+
+section[data-testid="stSidebar"]{
+    background:#111827;
+    border-right:1px solid #334155;
+}
+
+/* Sidebar Text */
+
+section[data-testid="stSidebar"] *{
+    color:#F8FAFC;
+}
+
+/* ---------- Headings ---------- */
+
+h1{
+    color:white !important;
+    font-size:52px !important;
+    font-weight:700 !important;
+}
+
+h2{
+    color:white !important;
+    font-size:36px !important;
+    font-weight:600 !important;
+}
+
+h3{
+    color:white !important;
+}
+
+/* Paragraph */
+
+p{
+    color:#CBD5E1 !important;
+    font-size:18px;
+    line-height:1.7;
+}
+
+/* Horizontal Line */
+
+hr{
+    border:1px solid #334155;
+}
+.stats-card{
+    background:#1E293B;
+    border-radius:18px;
+    padding:25px;
+    border:1px solid #334155;
+    text-align:center;
+    transition:0.3s;
+}
+
+.stats-card:hover{
+    transform:translateY(-5px);
+    border:1px solid #3B82F6;
+}
+
+.stats-title{
+    color:#94A3B8;
+    font-size:16px;
+}
+
+.stats-value{
+    color:white;
+    font-size:42px;
+    font-weight:700;
+    margin-top:10px;
+}
+/* ================================
+   INPUTS
+================================ */
+
+.stTextInput input{
+
+    border-radius:12px;
+    border:1px solid #334155;
+    background:#1E293B;
+    color:white !important;
+    caret-color:white !important;
+}
+.stTextInput input::placeholder{
+
+    color:#94A3B8 !important;
+}
+.stTextArea textarea{
+    border-radius:12px;
+    border:1px solid #334155;
+    background:#1E293B;
+    color:white !important;
+    caret-color:white !important;
+}
+.stTextArea textarea::placeholder{
+    color:#94A3B8 !important;
+}
+
+.stSelectbox div[data-baseweb="select"]{
+    border-radius:12px;
+}
+/* ================================
+   BUTTONS
+================================ */
+
+.stButton button{
+
+    width:100%;
+
+    border-radius:12px;
+
+    height:55px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border:none;
+
+    transition:0.3s;
+}
+
+.stButton button:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+}
+/* Download Button Styling */
+
+.stDownloadButton button {
+    width: 100%;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #262730;
+    color: white !important;
+    border: 1px solid #555;
+    font-size: 16px;
+}
+
+.stDownloadButton button:hover {
+    color: white !important;
+}
+/* ================================
+SOCIAL LINKS
+================================ */
+
+.social-link {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+
+.social-link:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+
+.social-card {
+    background:#111827;
+    border:1px solid #334155;
+    border-radius:15px;
+    padding:18px;
+    text-align:center;
+    height:140px;
+    transition:0.3s;
+}
+
+
+.social-card:hover {
+    border:1px solid #38BDF8;
+    transform:translateY(-5px);
+}
+
+
+.icon {
+    font-size:32px;
+}
+
+
+.title {
+    color:#38BDF8;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+.desc {
+    color:#CBD5E1;
+    font-size:14px;
+}
+/* Hide Streamlit default toolbar */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}

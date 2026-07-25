@@ -1,6 +1,6 @@
 # 🔐 Text Encryption Tool
 
-**A Python-based cryptography suite implementing classical ciphers, modern symmetric/asymmetric encryption, secure hashing, and file protection — built to understand how real-world security systems handle confidentiality and integrity.**
+**A Python and Streamlit-based cybersecurity application implementing classical ciphers, modern symmetric/asymmetric encryption, secure hashing, encoding, and file protection through an interactive security dashboard — built to understand how real-world security systems handle confidentiality, integrity, and secure data processing.**
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Cryptography](https://img.shields.io/badge/Cryptography-AES%20%7C%20RSA%20%7C%20SHA256-green)
@@ -30,11 +30,11 @@
 
 ## Overview
 
-**Text Encryption Tool** is a command-line cryptography application built to explore how encryption, encoding, and hashing work at a practical, code level — rather than just theoretically.
+**Text Encryption Tool** is a cybersecurity-focused application built using Python and Streamlit to explore how encryption, encoding, hashing, and file security work through both practical implementation and an interactive user interface..
 
 The project was created to bridge the gap between studying cryptographic concepts in a classroom setting and actually implementing them in working code. It covers the full spectrum of a typical introductory cybersecurity curriculum: classical ciphers that illustrate historical cryptographic weaknesses, modern symmetric encryption standards used in production systems (AES, Fernet), asymmetric encryption for secure key exchange (RSA), and one-way hashing for data integrity and password storage (SHA-256, bcrypt).
 
-Rather than treating each technique as an isolated script, the tool is organized into a modular architecture with a unified command-line interface, structured logging, exception handling, secure key storage, and an automated test suite — reflecting practices used in real software projects, not just standalone academic exercises.
+Rather than treating each technique as an isolated script, the tool is organized into a modular architecture with a Streamlit-based graphical interface, structured logging, exception handling, secure key storage, and an automated test suite, reflecting practices used in real software projects, not just standalone academic exercises.
 
 **Concepts demonstrated:**
 - Confidentiality through symmetric and asymmetric encryption
@@ -86,6 +86,16 @@ This project was built with the following learning goals in mind:
 - **RSA (2048-bit)** — key pair generation, OAEP padding with SHA-256, public-key encryption, and private-key decryption with PEM-based key storage
 
 ### Core Application Features
+### Streamlit User Interface
+
+- Interactive cybersecurity dashboard
+- Algorithm selection interface
+- Encryption and decryption controls
+- Hash generation and verification interface
+- Encoding tools through graphical controls
+- File upload and download support
+- Cybersecurity-themed custom UI design
+- Real-time operation feedback
 - Menu-driven command-line interface
 - Modular folder structure separating algorithms, keys, tests, and files
 - Centralized logging system
@@ -97,18 +107,39 @@ This project was built with the following learning goals in mind:
 
 ## Technologies Used
 
-| Category | Tool / Library |
-|---|---|
-| Language | Python 3 |
-| Cryptography | `cryptography` library (Fernet, AES-GCM, RSA) |
-| Password Hashing | `bcrypt` |
-| Testing | `unittest` |
-| File Handling | Python `os`, `io` |
-| Logging | Python `logging` module |
+| Category         | Tool / Library                                |
+| ---------------- | --------------------------------------------- |
+| Language         | Python 3                                      |
+| Framework        | Streamlit                                     |
+| Cryptography     | `cryptography` library (Fernet, AES-GCM, RSA) |
+| Password Hashing | `bcrypt`                                      |
+| UI Styling       | HTML/CSS customization                        |
+| Testing          | `unittest`                                    |
+| File Handling    | Python `os`, `io`                             |
+| Logging          | Python `logging` module                       |
 
 ---
 
-## Project Architecture
+## Application Screenshots
+
+### Home Dashboard
+
+![Home Dashboard](screenshots/home.png)
+
+
+### Encryption Center
+
+![Encryption Center](screenshots/encryption.png)
+
+
+### Hashing Center
+
+![Hashing Center](screenshots/hashing.png)
+
+
+### File Security Center
+
+![File Security Center](screenshots/file_security.png)
 
 ## Project Architecture
 
@@ -116,62 +147,42 @@ This project was built with the following learning goals in mind:
 Text-Encryption-Tool/
 
 │
+├── app.py
+│
 ├── algorithms/
-│   │
-│   ├── caesar_encrypt.py
-│   ├── caesar_decrypt.py
-│   ├── rot13.py
-│   ├── vigenere_encrypt.py
-│   ├── vigenere_decrypt.py
-│   │
-│   ├── base64_encode.py
-│   ├── base64_decode.py
-│   ├── hex_encode.py
-│   ├── hex_decode.py
-│   │
-│   ├── sha256_hash.py
-│   ├── bcrypt_hash.py
-│   ├── bcrypt_verify.py
-│   │
-│   ├── fernet_encrypt.py
-│   ├── fernet_decrypt.py
-│   ├── key_manager.py
-│   │
 │   ├── aes_encrypt.py
 │   ├── aes_decrypt.py
-│   ├── aes_file_encrypt.py
-│   ├── aes_file_decrypt.py
-│   └── aes_key_manager.py
+│   ├── rsa_encrypt.py
+│   ├── rsa_decrypt.py
+│   ├── fernet_encrypt.py
+│   ├── fernet_decrypt.py
+│   ├── caesar_encrypt.py
+│   ├── vigenere_encrypt.py
+│   ├── sha256.py
+│   ├── bcrypt_hash.py
+│   └── file_security_modules
+│
+├── pages/
+│   ├── 1_Encryption.py
+│   ├── 2_Hashing.py
+│   ├── 3_Encoding.py
+│   ├── 4_File_Encryption.py
+│   └── 5_About.py
+│
+├── assets/
+│   └── style.css
 │
 ├── keys/
-│   │
-│   ├── fernet.key
-│   ├── aes.key
-│   ├── rsa_private.pem
-│   └── rsa_public.pem
+│   └── Encryption key files
 │
 ├── tests/
-│   │
-│   ├── test_caesar.py
-│   ├── test_vigenere.py
-│   ├── test_encoding.py
-│   ├── test_hashing.py
-│   ├── test_fernet.py
-│   ├── test_file_crypto.py
-│   ├── test_aes.py
-│   ├── test_aes_file.py
-│   └── test_rsa.py
-│
-├── files/
 │
 ├── logger.py
-│
-├── main.py
 │
 ├── requirements.txt
 │
 └── README.md
-```
+
 
 ## Installation
 
@@ -192,11 +203,10 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the tool from the project root:
+Run the Streamlit application from the project root:
 
 ```bash
-python main.py
-```
+streamlit run app.py
 
 You will be presented with a menu to select the desired cryptographic operation:
 
@@ -310,13 +320,12 @@ This project is built for **educational purposes** to demonstrate applied unders
 
 ## Future Improvements
 
-- Graphical user interface (GUI) using Tkinter or a web-based frontend
-- Password-based key derivation (PBKDF2 / Argon2) for user-supplied encryption keys
-- Digital signatures using RSA/ECDSA for message authentication
-- Secure file-sharing workflow combining RSA key exchange with AES file encryption
-- Additional algorithms such as ChaCha20-Poly1305 and elliptic-curve cryptography (ECC)
-- Command-line argument support (argparse) for scripting and automation
-
+- Cloud deployment using Streamlit Community Cloud or similar platforms
+- User authentication and role-based access
+- Password-based key derivation using PBKDF2 / Argon2
+- Digital signatures using RSA/ECDSA
+- Secure file-sharing workflow combining RSA key exchange with AES encryption
+- Additional algorithms such as ChaCha20-Poly1305 and ECC
 ---
 
 ## Learning Outcomes
