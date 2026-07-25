@@ -1,5 +1,12 @@
 # 🔐 Text Encryption Tool
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bhoomikagowda518-ops/Text-Encryption-Tool)
+---
+
+## 🚀 Live Demo
+
+Try the application here:
+
+[🔐 Text Encryption Tool](https://text-encryption-tool-rypytn7rwz5wga9vrnwpuh.streamlit.app/
 
 **A Python and Streamlit-based cybersecurity application implementing classical ciphers, modern symmetric/asymmetric encryption, secure hashing, encoding, and file protection through an interactive security dashboard — built to understand how real-world security systems handle confidentiality, integrity, and secure data processing.**
 
