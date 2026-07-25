@@ -230,6 +230,9 @@ if uploaded_file:
     st.success(
         f"Selected File : {uploaded_file.name}"
     )
+st.info(
+    "💡 To decrypt, upload a file that was previously encrypted by this application."
+)
 
 st.divider()
 # ==================================================
