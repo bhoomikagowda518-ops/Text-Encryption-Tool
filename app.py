@@ -462,9 +462,8 @@ Bhoomika B C
 
 <p style="color:#CBD5E1;">
 
-B.E Computer Science Engineering
+B.E Computer Science Engineering(cybersecurity)
 <br>
-Cybersecurity Student
 
 </p>
 
@@ -671,7 +670,7 @@ Python | Cryptography | Streamlit
 </p>
 
 <p>
-Engineered by Bhoomika B C
+Developed by Bhoomika B C
 </p>
 
 </div>
